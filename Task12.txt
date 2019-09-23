@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace t12
+{
+    class Employee
+    {
+        public string Nam;
+        public string Des;
+        public double Sal;
+        public Employee()
+        {
+
+        }
+        public Employee(string name, string designation, double salary)
+        {
+            Nam = name;
+            Des = designation;
+            Sal = salary;
+
+        }
+        public string Name
+            {
+                get;
+                set;
+            }
+            public string Designation
+            {
+                get;
+                set;
+            }
+            public double Salary
+            {
+                get;
+                set;
+            }
+        
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Employee obj = new Employee("ras", "manger", 700);
+            List<Employee> employeeList = new List<Employee>();
+            employeeList.Add(new Employee()
+            {
+                
+                Name = "Rashid",
+                Designation = "CEO",
+                Salary= 123333
+            });
+            employeeList.Add(new Employee()
+            {
+               
+                Name = "Numan",
+                Designation = "Manger",
+                Salary = 1233300
+            });
+            employeeList.Add(new Employee()
+            {
+             
+                Name = "sumi",
+                Designation = "Salesman",
+                Salary = 1233
+            });
+            int i = 1;
+            foreach (var data in employeeList)
+            {
+                Console.WriteLine("Data of Employeee "+ i);
+                Console.WriteLine("My Name is {0} and My Designation is {1} and My Salary is {2}", data.Name, data.Designation,data.Salary);
+                i++;
+            }
+            
+
+        }
+    }
+}

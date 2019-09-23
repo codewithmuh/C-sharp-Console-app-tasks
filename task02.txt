@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            Console.WriteLine(" Enter  Your name ");
+            name = Console.ReadLine();
+            Console.WriteLine(" Hey ,Your name is  {0} ", name);
+
+
+        }
+    }
+}

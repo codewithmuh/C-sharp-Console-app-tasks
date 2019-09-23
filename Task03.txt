@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hey dude, What's your name.");
+            String name = Console.ReadLine();
+            if (name.Equals("Alice") || name.Equals("Bob"))
+            {
+                Console.WriteLine("Hey it's you, " + name);
+            }
+            else
+            {
+                Console.WriteLine("dude, not who I thought you were.");
+            }
+
+
+        }
+    }
+}

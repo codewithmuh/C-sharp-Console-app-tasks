@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number;
+            int Numbers;
+            int sum = 0;
+            Console.WriteLine(" How many Numbers you want to sum ");
+            number = Convert.ToInt32(Console.ReadLine());
+            int i = 0;
+                 for(; i < number; i++) {
+                Console.WriteLine(" Enter  Number {0} ", i + 1);
+
+                Numbers = Convert.ToInt32(Console.ReadLine());
+
+
+                if (Numbers % 3 == 0 || Numbers % 5 == 0)
+                {
+                    sum += Numbers;
+                }
+                else
+                    continue;
+                
+               
+            }
+              
+            
+               Console.WriteLine(" Sum of  multiples of three or five {0} ", sum);
+
+
+        }
+    }
+}

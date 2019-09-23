@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task20
+{
+    class Student
+    {
+        
+        public string Name
+        {
+            get;
+            set;
+        }
+        //public string Attendance
+        //{
+        //    get;
+        //    set;
+        //}
+        public int RollNumber
+        {
+            get;
+            set;
+        }
+        public int Age
+        {
+            get;
+            set;
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int objectsToCreate = 2;
+
+            // Create an array to hold all your objects
+            Student[] myObjects = new Student[objectsToCreate];
+            int count = 1;
+            for (int i = 0; i < objectsToCreate; i++)
+            {
+                // Instantiate a new object, set it's number and
+                // some other properties
+                Console.WriteLine(" Enter the name , ROllNumber , age   of student  "+count);
+
+                
+
+              
+                myObjects[i] = new Student()
+                {
+
+                    Name = Console.ReadLine(),
+                    RollNumber = Convert.ToInt32(Console.ReadLine()),
+                    Age = Convert.ToInt32(Console.ReadLine()),
+                     
+
+
+            };
+                count++;
+
+            }
+            int c = 1;
+            for (int i = 0; i < objectsToCreate; i++)
+            {
+                // Instantiate a new object, set it's number and
+                // some other properties
+                Console.WriteLine("_______________________________ ");
+                Console.WriteLine("Data of Student   "+c);
+               
+
+                Console.WriteLine("Name " + myObjects[i].Name);
+                Console.WriteLine("RollNumber " + myObjects[i].RollNumber);
+                Console.WriteLine("Age" + myObjects[i].Age);
+                
+                
+                c++;
+           
+
+            }
+            Console.ReadKey();
+        }
+    }
+}
